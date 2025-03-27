@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".DrawingActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/DrawToolbar"
+        app:title="拟合结果"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryBlue"
+        android:elevation="4dp"
+        android:theme="@style/toolbar_blue_theme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+
+        />
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:gravity="left"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:text="Y-Axis"-->
+<!--        />-->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+    />
+    <TextView
+        android:id="@+id/slope"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        />
+    <TextView
+        android:id="@+id/intercept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        />
+    <TextView
+        android:id="@+id/R_squared"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        />
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        />
+
+    <Button
+        android:id="@+id/changeY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="110dp"
+        android:text="隐藏Y轴"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="保存"
+            />
+
+        <Button
+            android:id="@+id/test_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="测试"
+            />
+    </LinearLayout>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/picture"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:id="@+id/test_btn"-->
+<!--        android:text="测试！"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+</LinearLayout>

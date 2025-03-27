@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:orderInCategory="0"
+        android:id="@+id/navigation_chat"
+        android:title="测绘图表"
+        />
+    <item android:orderInCategory="1"
+        android:id="@+id/navigation_test"
+        android:title="测试"
+        />
+</menu>
